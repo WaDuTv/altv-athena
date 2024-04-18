@@ -5,7 +5,7 @@ import { Character } from '@AthenaShared/interfaces/character.js';
 import { getPage, open } from './page.js';
 import { CharSelectEvents } from '../shared/events.js';
 
-const CAM_POS = { x: -1355.8013916015625, y: -1182.136962890625, z: 4.85 };
+const CAM_POS = { x: -1498.923, y: -48.76928, z: 54.78934 };
 
 let currentCharacter: Character;
 let characterCount: number;

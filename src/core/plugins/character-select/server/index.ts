@@ -37,7 +37,8 @@ async function show(player: alt.Player) {
     CurrentIndex[player.id] = 0;
     showCharacter(player, 0);
     Athena.player.emit.clearSpinner(player);
-    player.setDateTime(1, 1, 2023, 15, 2, 0);
+    Athena.systems.defaults.time.updatePlayer;
+    // player.setDateTime(1, 1, 2023, 15, 2, 0);
 }
 
 async function showCharacter(player: alt.Player, index: number) {
@@ -49,7 +50,7 @@ async function showCharacter(player: alt.Player, index: number) {
         return;
     }
 
-    const pos = new alt.Vector3({ x: -1354.4071044921875, y: -1180.5870361328125, z: 4.421841621398926 });
+    const pos = new alt.Vector3({ x: -1499.29761, y: -46.4779167, z: 55 });
     player.model = 'mp_m_freemode_01';
     player.spawn(pos);
 
@@ -58,7 +59,7 @@ async function showCharacter(player: alt.Player, index: number) {
 
     player.visible = true;
     player.pos = pos;
-    player.rot = new alt.Vector3({ x: 0, y: 0, z: 2.6257832050323486 });
+    player.rot = new alt.Vector3({ x: 0, y: 0, z: 15 });
     player.frozen = true;
 
     Athena.player.emit.fadeScreenFromBlack(player, 2000);

@@ -1,6 +1,4 @@
 import IVehicleMod from './vehicleMod.js';
-import IVehicleModStance from './vehicleModStance.js';
-import IVehicleModWheels from './vehicleModWheels.js';
 
 /**
  * Tuning to apply to an owned vehicle.
@@ -32,22 +30,6 @@ export interface IVehicleTuning {
      *
      */
     // handling: Partial<IVehicleHandling>;
-
-    /**
-     * Stance to apply to this vehicle
-     *
-     * @type {Array<IVehicleMod>}
-     *
-     */
-    stance: Array<IVehicleModStance>;
-
-    /**
-     * Wheels to apply to this vehicle
-     *
-     * @type {Array<IVehicleMod>}
-     *
-     */
-    wheels: Array<IVehicleModWheels>;
 }
 
 export default IVehicleTuning;

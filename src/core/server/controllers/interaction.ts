@@ -330,7 +330,7 @@ export function append(interaction: Interaction): string {
     }
 
     const shape = new InteractionShape(interaction as Required<Interaction>);
-    shape.playersOnly = true;
+    shape.playersOnly = false;
 
     InternalFunctions.add(shape);
 

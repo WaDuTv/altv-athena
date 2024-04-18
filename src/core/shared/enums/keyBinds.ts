@@ -21,12 +21,12 @@ export const KEY_BINDS = {
     ANIMATION: 74,
     // T
     CHAT: 84,
-    // X
-    VEHICLE_LOCK: 88,
+    // L
+    VEHICLE_LOCK: 76,
     // Y
-    VEHICLE_ENGINE: 89,
+    VEHICLE_ENGINE: 90,
     // F1
-    DEBUG_KEY: 112,
+    DEBUG_KEY: 114,
 };
 
 /**
